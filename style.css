@@ -1,9 +1,11 @@
+/* General CSS for the entire body */
 body {
     display: flex;
     flex-direction: column;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* The top section of the webpage */
 .top {
     display: flex;
     flex-direction: column;
@@ -35,10 +37,12 @@ body {
     display: flex;
     gap: 28px;
     padding-bottom: 78px;
+    flex: initial;
 }
 
 .top .top-left {
     width: 50%;
+    overflow-wrap: break-word;
 }
 
 .top .top-body .top-left button {
@@ -67,6 +71,8 @@ body {
     color:#F9FAF8;
 }
 
+/* The top-middle section of the webpage */
+
 .top-middle {
     display: flex;
     flex-direction: column;
@@ -83,17 +89,21 @@ body {
     font-weight: 1000;
     color:#1F2937;
     margin-bottom: 28px;
+    text-align: center;
 }
 
 .top-middle .content-blocks {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 
 .top-middle .content-blocks .block {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin: 5px 20px 0px 20px;
 }
 
 .top-middle .content-blocks .image {
@@ -105,6 +115,9 @@ body {
 .top-middle .content-blocks p {
     text-align: center;
 }
+
+
+/* The bottom-middle section of the webpage */
 
 .bottom-middle {
     background-color: #E5E7EB;
@@ -127,6 +140,7 @@ body {
     font-weight: bold;
 }
 
+/* The bottom section of the webpage */
 
 .bottom {
     display: flex;
@@ -170,6 +184,8 @@ body {
     border-radius: 3px;
 }
 
+/* The footer section of the webpage */
+
 .footer {
     display: flex;
     justify-content: center;
@@ -181,6 +197,7 @@ body {
     padding-bottom: 40px;
 }
 
+/* Some additional styles */
 .secondary-text {
     font-size: 18px;
     color:#E5E7EB;
